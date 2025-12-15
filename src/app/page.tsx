@@ -1,65 +1,98 @@
-import Image from "next/image";
+import SawdustParticles from './components/3d/SawdustParticles'
+import Link from 'next/link'
+import { ArrowDown } from 'lucide-react'
+import ServicesGallery from './components/sections/ServiceGallery'
+import Testimonials from './components/sections/Testimonials'
+import WorkshopCTA from './components/sections/WorkshopCTA'
+import Footer from './components/ui/Footer'
+import Navbar from './components/ui/Navbar'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="relative min-h-screen flex flex-col bg-[#050505] text-[#e0e0e0]">
+
+      { }
+      <Navbar />
+
+      {/* HERO BANNER */}
+      <section className="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/imgs/hero_placeholder.jpg"
+            alt="Interiores modernos com acabamentos em madeira"
+            className="w-full h-full object-cover scale-105 animate-in fade-in duration-[2s]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#050505]"></div>
+        </div>
+
+        <div className="absolute inset-0 z-10 opacity-30 pointer-events-none">
+          <SawdustParticles />
+        </div>
+
+        <div className="z-20 text-center space-y-8 max-w-5xl px-4 mt-10">
+          <p className="text-xs md:text-sm uppercase tracking-[0.5em] text-[#C19A6B] font-medium animate-in slide-in-from-bottom-4 duration-1000 delay-300">
+            Desde 2000
+          </p>
+
+          {/* TÍTULO ATUALIZADO: Foco na Modernidade */}
+          <h2 className="font-serif text-5xl md:text-8xl font-thin leading-[1.1] uppercase tracking-wide text-white drop-shadow-2xl animate-in slide-in-from-bottom-8 duration-1000 delay-500">
+            A Arte da <br />
+            <span className="italic font-light text-[#e0e0e0]/90">Carpintaria Moderna</span>
+          </h2>
+
+          {/* DESCRIÇÃO ATUALIZADA: Foco nos materiais reais que usam */}
+          <p className="font-sans font-light text-sm md:text-base text-gray-300 max-w-xl mx-auto leading-relaxed tracking-wide animate-in slide-in-from-bottom-8 duration-1000 delay-600">
+            Especialistas em cozinhas, roupeiros e mobiliário personalizado.
+            Dominamos os materiais contemporâneos: dos lacados perfeitos às folhas naturais e texturas inovadoras.
+          </p>
+
+          <div className="pt-8 animate-in slide-in-from-bottom-8 duration-1000 delay-700">
+            <Link href="/portfolio" className="border border-white/30 bg-black/20 backdrop-blur-sm px-12 py-4 text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-500 text-white inline-block">
+              Ver Projetos
+            </Link>
+          </div>
+        </div>
+
+        <div className="absolute bottom-10 z-20 animate-bounce text-white/50">
+          <ArrowDown size={24} strokeWidth={1} />
+        </div>
+      </section>
+
+      { }
+      <section className="bg-[#050505] py-32 px-6 relative z-20">
+        <div className="container mx-auto max-w-4xl text-center space-y-12">
+          <div className="w-[1px] h-20 bg-gradient-to-b from-[#C19A6B] to-transparent mx-auto mb-8"></div>
+
+          <h3 className="font-serif text-3xl md:text-5xl leading-tight text-[#d4d4d4]">
+            "A evolução da marcenaria <br /> exige versatilidade."
+          </h3>
+
+          <p className="text-xs uppercase tracking-widest text-[#8B5A2B]">
+            — Materiais & Acabamentos
+          </p>
+
+          { }
+          <p className="font-sans font-light text-gray-500 leading-loose text-sm md:text-base max-w-2xl mx-auto">
+            Não nos limitamos ao passado. Combinamos a durabilidade das madeiras nobres com a
+            precisão dos materiais modernos. Trabalhamos com <strong>MDFs hidrófugos</strong>, <strong>contraplacados</strong> de bétula,
+            <strong>folhas de madeira natural</strong> (maple, carvalho, nogueira) e acabamentos <strong>lacados</strong> de alta resistência.
+            O resultado é um mobiliário esteticamente irrepreensível e tecnicamente superior.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+      </section>
+
+      { }
+      <ServicesGallery />
+
+      { }
+      <Testimonials />
+
+      { }
+      <WorkshopCTA />
+
+      { }
+      <Footer />
+
+    </main>
+  )
 }

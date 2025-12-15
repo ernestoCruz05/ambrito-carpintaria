@@ -1,0 +1,79 @@
+{
+  "categories": [
+    { "id": "all", "label": "Todos" },
+    { "id": "cozinhas", "label": "Cozinhas" },
+    { "id": "roupeiros", "label": "Roupeiros" },
+    { "id": "wc", "label": "Casas de Banho" },
+    { "id": "salas", "label": "Salas" },
+    { "id": "escritorios", "label": "Escritórios" },
+    { "id": "comercial", "label": "Comercial" }
+  ],
+  "projects": [
+    {
+      "id": "cozinha-alfama",
+      "title": "Cozinha Alfama",
+      "category": "cozinhas",
+      "location": "Lisboa",
+      "year": 2024,
+      "description": "Cozinha contemporânea em lacado branco mate com detalhes em carvalho natural. Ilha central com bancada em Silestone.",
+      "featured": true,
+      "cover": "cover.jpg",
+      "images": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
+    },
+    {
+      "id": "roupeiro-foz",
+      "title": "Closet Foz do Douro",
+      "category": "roupeiros",
+      "location": "Porto",
+      "year": 2024,
+      "description": "Closet walk-in com iluminação LED integrada. Acabamento em folha de nogueira americana com gavetas em soft-close.",
+      "featured": true,
+      "cover": "cover.jpg",
+      "images": ["01.jpg", "02.jpg", "03.jpg"]
+    },
+    {
+      "id": "wc-cascais",
+      "title": "WC Suite Cascais",
+      "category": "wc",
+      "location": "Cascais",
+      "year": 2023,
+      "description": "Móvel de casa de banho suspenso em MDF hidrófugo lacado. Espelho retroiluminado com sistema anti-embaciamento.",
+      "featured": false,
+      "cover": "cover.jpg",
+      "images": ["01.jpg", "02.jpg"]
+    },
+    {
+      "id": "sala-comporta",
+      "title": "Sala de Estar Comporta",
+      "category": "salas",
+      "location": "Comporta",
+      "year": 2024,
+      "description": "Estante de parede em carvalho natural com nichos retroiluminados. Móvel TV integrado com sistema de gestão de cabos.",
+      "featured": true,
+      "cover": "cover.jpg",
+      "images": ["01.jpg", "02.jpg", "03.jpg"]
+    },
+    {
+      "id": "escritorio-avenida",
+      "title": "Home Office Avenidas Novas",
+      "category": "escritorios",
+      "location": "Lisboa",
+      "year": 2023,
+      "description": "Escritório em casa com secretária em L e estantes integradas. Acabamento em folha de maple com pormenores lacados.",
+      "featured": false,
+      "cover": "cover.jpg",
+      "images": ["01.jpg", "02.jpg"]
+    },
+    {
+      "id": "loja-baixa",
+      "title": "Boutique Baixa-Chiado",
+      "category": "comercial",
+      "location": "Lisboa",
+      "year": 2024,
+      "description": "Projeto comercial completo incluindo balcão, expositores e provadores. Folha de carvalho fumado com estrutura metálica.",
+      "featured": true,
+      "cover": "cover.jpg",
+      "images": ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"]
+    }
+  ]
+}
