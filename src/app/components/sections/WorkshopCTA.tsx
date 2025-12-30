@@ -67,7 +67,7 @@ export default function WorkshopCTA() {
                     </div>
 
                     <div className="pt-6">
-                        <Link href="#contactos">
+                        <Link href="/contactos">
                             <button className="bg-[#1a1a1a] text-white px-10 py-4 text-xs uppercase tracking-widest hover:bg-[#8B5A2B] transition-colors shadow-lg">
                                 Pedir Orçamento Gratuito
                             </button>
