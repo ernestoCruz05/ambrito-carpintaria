@@ -7,30 +7,29 @@ const services = [
     {
         id: 1,
         title: "Interiores & Cozinhas",
-        description: "Espaços desenhados para a vida moderna com o calor da madeira.",
-        // Podes trocar por imagens locais depois: "/imgs/cozinha.jpg"
-        image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2000&auto=format&fit=crop",
+        description: "Espacos desenhados para a vida moderna com o calor da madeira.",
+        image: "/imgs/services/interiores-cozinhas.jpg",
         span: "md:col-span-2"
     },
     {
         id: 2,
-        title: "Mobiliário à Medida",
-        description: "Peças únicas que contam uma história.",
-        image: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=1000&auto=format&fit=crop",
+        title: "Mobiliario a Medida",
+        description: "Pecas unicas que contam uma historia.",
+        image: "/imgs/services/mobiliario-medida.jpg",
         span: "md:col-span-1"
     },
     {
         id: 3,
-        title: "Restauro & Conservação",
+        title: "Restauro & Conservacao",
         description: "Respeitar o passado, construindo o futuro.",
-        image: "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?q=80&w=1000&auto=format&fit=crop",
+        image: "/imgs/services/restauro.jpg",
         span: "md:col-span-1"
     },
     {
         id: 4,
         title: "Caixilharia & Portas",
-        description: "A primeira impressão da sua casa.",
-        image: "https://images.unsplash.com/photo-1506376579899-733d02633054?q=80&w=1000&auto=format&fit=crop",
+        description: "A primeira impressao da sua casa.",
+        image: "/imgs/services/portas.jpg",
         span: "md:col-span-2"
     }
 ]

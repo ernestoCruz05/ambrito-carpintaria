@@ -3,6 +3,16 @@ import Footer from '../components/ui/Footer'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CheckCircle2, Ruler, PenTool, LayoutDashboard } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Sobre Nos | A.M. Brito - Carpintaria de Excelencia',
+    description: 'Desde 2000 dedicados a carpintaria tecnica. Conheca os nossos servicos, capacidades e o compromisso com a qualidade que nos define.',
+    openGraph: {
+        title: 'Sobre Nos | A.M. Brito Carpintaria',
+        description: 'Carpintaria portuguesa especializada em interiores, mobiliario e acabamentos de excelencia.',
+    },
+}
 
 export default function Sobre() {
     return (
@@ -13,8 +23,8 @@ export default function Sobre() {
             <section className="relative h-[60vh] flex flex-col justify-center items-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://images.unsplash.com/photo-1701964619679-4eced72c785e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fHdvb2QlMjB0ZXh0dXJlJTIwaGlnaCUyMHF1YWxpdHklMjBjYXJwZW50cnklMjB3b29kd29ya2luZyUyMGRlY29yYXRpb258ZW58MHx8MHx8fDA%3D"
-                        alt="Textura de madeira escura"
+                        src="/imgs/pages/sobre-hero.jpg"
+                        alt="Textura de madeira"
                         fill
                         className="object-cover opacity-40"
                         priority
@@ -129,8 +139,8 @@ export default function Sobre() {
             { }
             <section className="h-[50vh] relative">
                 <Image
-                    src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?q=80&w=2670&auto=format&fit=crop"
-                    alt="Mãos a trabalhar madeira"
+                    src="/imgs/pages/sobre-maos.jpg"
+                    alt="Maos a trabalhar madeira"
                     fill
                     className="object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-1000"
                 />

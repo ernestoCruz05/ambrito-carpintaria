@@ -18,8 +18,25 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'A.M. Brito | Carpintaria de Excelência',
-  description: 'Carpintaria portuguesa especializada em espaços únicos.',
+  title: {
+    default: 'A.M. Brito | Carpintaria de Excelencia',
+    template: '%s | A.M. Brito'
+  },
+  description: 'Carpintaria portuguesa especializada em cozinhas, roupeiros e mobiliario por medida. Desde 2000 em Arouca, Portugal.',
+  keywords: ['carpintaria', 'mobiliario', 'cozinhas', 'roupeiros', 'madeira', 'Arouca', 'Portugal', 'mobiliario por medida'],
+  authors: [{ name: 'A.M. Brito Carpintaria' }],
+  creator: 'A.M. Brito',
+  openGraph: {
+    type: 'website',
+    locale: 'pt_PT',
+    siteName: 'A.M. Brito Carpintaria',
+    title: 'A.M. Brito | Carpintaria de Excelencia',
+    description: 'Carpintaria portuguesa especializada em cozinhas, roupeiros e mobiliario por medida.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({

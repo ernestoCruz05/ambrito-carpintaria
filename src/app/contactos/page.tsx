@@ -2,6 +2,17 @@ import Navbar from '../components/ui/Navbar'
 import Footer from '../components/ui/Footer'
 import Image from 'next/image'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
+import ContactForm from '../components/forms/ContactForm'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Contactos | A.M. Brito - Carpintaria de Excelencia',
+    description: 'Entre em contacto connosco para orcamentos de cozinhas, roupeiros e mobiliario personalizado. Visite a nossa oficina em Arouca.',
+    openGraph: {
+        title: 'Contactos | A.M. Brito Carpintaria',
+        description: 'Entre em contacto para iniciar o seu projeto de carpintaria.',
+    },
+}
 
 export default function Contactos() {
     return (
@@ -14,8 +25,8 @@ export default function Contactos() {
 
                 {/* The Image */}
                 <Image
-                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
-                    alt="Contact Hero"
+                    src="/imgs/pages/contactos-hero.jpg"
+                    alt="Interior moderno com mobiliario em madeira"
                     fill
                     className="object-cover opacity-80"
                     priority
@@ -105,66 +116,7 @@ export default function Contactos() {
                     </div>
 
                     {/* RIGHT: The Form (Dark, Minimalist, Premium) */}
-                    <div className="lg:col-span-8 bg-[#0a0a0a] border border-white/10 p-8 md:p-12 rounded-sm shadow-2xl relative">
-                        {/* Subtle glow effect behind the form */}
-                        <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#C19A6B] opacity-[0.05] blur-[80px] rounded-full pointer-events-none"></div>
-
-                        <form className="space-y-8 relative z-10">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="space-y-2 group">
-                                    <label className="text-[0.65rem] uppercase tracking-widest text-gray-500 font-bold group-focus-within:text-[#C19A6B] transition-colors">Nome</label>
-                                    <input
-                                        type="text"
-                                        className="w-full bg-transparent border-b border-white/10 py-3 text-sm text-white focus:border-[#C19A6B] focus:outline-none transition-colors placeholder:text-gray-700"
-                                        placeholder="Seu nome"
-                                    />
-                                </div>
-                                <div className="space-y-2 group">
-                                    <label className="text-[0.65rem] uppercase tracking-widest text-gray-500 font-bold group-focus-within:text-[#C19A6B] transition-colors">Email</label>
-                                    <input
-                                        type="email"
-                                        className="w-full bg-transparent border-b border-white/10 py-3 text-sm text-white focus:border-[#C19A6B] focus:outline-none transition-colors placeholder:text-gray-700"
-                                        placeholder="seu@email.com"
-                                    />
-                                </div>
-                            </div>
-
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div className="space-y-2 group">
-                                    <label className="text-[0.65rem] uppercase tracking-widest text-gray-500 font-bold group-focus-within:text-[#C19A6B] transition-colors">Telefone</label>
-                                    <input
-                                        type="tel"
-                                        className="w-full bg-transparent border-b border-white/10 py-3 text-sm text-white focus:border-[#C19A6B] focus:outline-none transition-colors placeholder:text-gray-700"
-                                        placeholder="+351..."
-                                    />
-                                </div>
-                                <div className="space-y-2 group">
-                                    <label className="text-[0.65rem] uppercase tracking-widest text-gray-500 font-bold group-focus-within:text-[#C19A6B] transition-colors">Assunto</label>
-                                    <select className="w-full bg-transparent border-b border-white/10 py-3 text-sm text-white focus:border-[#C19A6B] focus:outline-none transition-colors [&>option]:bg-black text-gray-400">
-                                        <option>Orçamento Geral</option>
-                                        <option>Cozinha</option>
-                                        <option>Mobiliário</option>
-                                        <option>Outro</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div className="space-y-2 group">
-                                <label className="text-[0.65rem] uppercase tracking-widest text-gray-500 font-bold group-focus-within:text-[#C19A6B] transition-colors">Mensagem</label>
-                                <textarea
-                                    rows={6}
-                                    className="w-full bg-white/5 border border-white/10 p-4 text-sm text-white focus:border-[#C19A6B] focus:outline-none transition-colors resize-none placeholder:text-gray-600 mt-2 rounded-sm"
-                                    placeholder="Como podemos ajudar?"
-                                ></textarea>
-                            </div>
-
-                            <div className="flex justify-end pt-4">
-                                <button className="bg-[#C19A6B] text-black px-12 py-4 text-xs font-bold uppercase tracking-[0.2em] hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(193,154,107,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-                                    Enviar Mensagem
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                    <ContactForm />
 
                 </div>
             </div>

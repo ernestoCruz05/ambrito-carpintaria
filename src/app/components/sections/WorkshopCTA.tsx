@@ -8,11 +8,11 @@ export default function WorkshopCTA() {
         <section className="bg-[#f4f1ea] py-24 px-6 md:px-20 text-[#1a1a1a]">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-                {/* Lado Esquerdo: Imagem (Mantemos a imagem bonita de produção) */}
+                {/* Lado Esquerdo: Imagem */}
                 <div className="relative h-[500px] w-full bg-[#e5e0d8] shadow-xl overflow-hidden group">
                     <Image
-                        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2531&auto=format&fit=crop"
-                        alt="Carpintaria em produção"
+                        src="/imgs/pages/workshop-cta.jpg"
+                        alt="Carpintaria em producao"
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-1000 grayscale group-hover:grayscale-0"
                     />

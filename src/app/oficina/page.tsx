@@ -2,6 +2,16 @@ import Navbar from '../components/ui/Navbar'
 import Footer from '../components/ui/Footer'
 import Image from 'next/image'
 import { Cpu, PaintBucket, Ruler, Users } from 'lucide-react'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Oficina | A.M. Brito - Carpintaria de Excelencia',
+    description: 'Conheca a nossa oficina em Arouca. Equipamentos CNC, cabine de lacagem, orlacao tecnica e uma equipa especializada em carpintaria de precisao.',
+    openGraph: {
+        title: 'A Nossa Oficina | A.M. Brito Carpintaria',
+        description: 'Visite a nossa oficina equipada com tecnologia de ponta para carpintaria de excelencia.',
+    },
+}
 
 export default function Oficina() {
     return (
@@ -13,7 +23,7 @@ export default function Oficina() {
                 {/* Imagem de Fundo (Ambiente Industrial Escuro) */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://images.unsplash.com/photo-1752249764475-4e15d3a63401?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="/imgs/pages/oficina-hero.jpg"
                         alt="Oficina de Carpintaria Moderna"
                         fill
                         className="object-cover opacity-60"
@@ -93,11 +103,11 @@ export default function Oficina() {
             </section>
 
             {/* --- IMAGEM DE DESTAQUE GRANDE --- */}
-            <section className="w-full h-[60vh] relative bg-fixed bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1633175113177-5be3854f29c8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")' }}>
+            <section className="w-full h-[60vh] relative bg-fixed bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("/imgs/pages/oficina-quote.jpg")' }}>
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-                    <h3 className="font-serif text-4xl md:text-6xl text-white mb-6">"Qualidade não é um ato, <br /> é um hábito."</h3>
-                    <p className="text-[#C19A6B] uppercase tracking-widest text-xs">Aristóteles</p>
+                    <h3 className="font-serif text-4xl md:text-6xl text-white mb-6">"Qualidade nao e um ato, <br /> e um habito."</h3>
+                    <p className="text-[#C19A6B] uppercase tracking-widest text-xs">Aristoteles</p>
                 </div>
             </section>
 
