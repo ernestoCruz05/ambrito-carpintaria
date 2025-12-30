@@ -7,17 +7,7 @@ services:
     restart: unless-stopped
     ports:
       - "3001:3000"
-    environment:
-      - NODE_ENV=production
-      - SMTP_HOST=${SMTP_HOST}
-      - SMTP_PORT=${SMTP_PORT}
-      - SMTP_USER=${SMTP_USER}
-      - SMTP_PASS=${SMTP_PASS}
     env_file:
       - .env.local
-    networks:
-      - web
-
-networks:
-  web:
-    external: true
+    environment:
+      - NODE_ENV=production
