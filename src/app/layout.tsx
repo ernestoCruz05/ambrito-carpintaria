@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     description: 'Carpintaria portuguesa especializada em cozinhas, roupeiros, mobiliário por medida e restauro. Mais de 20 anos de experiência.',
     images: [
       {
-        url: '/imgs/og-image.jpg',
+        url: '/logo.jpg',
         width: 1200,
         height: 630,
         alt: 'A.M. Brito Carpintaria - Mobiliário por Medida',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'A.M. Brito | Carpintaria de Excelência',
     description: 'Carpintaria portuguesa especializada em mobiliário por medida. Mais de 20 anos de experiência em Arouca.',
-    images: ['/imgs/og-image.jpg'],
+    images: ['/logo.jpg'],
   },
   robots: {
     index: true,
@@ -83,7 +83,7 @@ const jsonLd = {
   name: 'A.M. Brito Carpintaria',
   description: 'Carpintaria portuguesa especializada em cozinhas, roupeiros, mobiliário por medida e restauro de madeira.',
   url: 'https://www.ambritocarpintaria.pt',
-  telephone: '+351 XXX XXX XXX',
+  telephone: '+351 919 205 718',
   email: 'a.britocarpintaria@gmail.com',
   address: {
     '@type': 'PostalAddress',
@@ -114,7 +114,7 @@ const jsonLd = {
   image: 'https://www.ambritocarpintaria.pt/imgs/og-image.jpg',
   sameAs: [
     // Add social media URLs here when available
-    // 'https://www.facebook.com/ambritocarpintaria',
+    'https://www.facebook.com/profile.php?id=100017558200968',
     // 'https://www.instagram.com/ambritocarpintaria',
   ],
   areaServed: {
